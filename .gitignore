@@ -1,0 +1,29 @@
+# Node modules
+frontend/node_modules/
+
+# Angular build output
+frontend/dist/
+frontend/.angular/
+
+# Logs
+frontend/*.log
+backend/*.log
+
+# Environment files
+frontend/.env
+backend/.env
+
+# .NET build output
+backend/bin/
+backend/obj/
+
+# User-specific files
+*.swp
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# IDE-specific files
+.idea/
+.vscode/
