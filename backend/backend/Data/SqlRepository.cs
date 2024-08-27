@@ -1,5 +1,6 @@
 ﻿
 using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
 
 namespace backend.Data
 {
@@ -25,6 +26,11 @@ namespace backend.Data
         public async Task<List<T>> GetAll()
         {
             return await dbContext.Set<T>().ToListAsync();
+        }
+
+        public async Task<List<T>> GetAll(Expression<Func<T, bool>> filter)
+        {
+            return await dbContext.Set<T>().Where(filter).ToListAsync();
         }
 
         public async Task<T> GetById(int id)
