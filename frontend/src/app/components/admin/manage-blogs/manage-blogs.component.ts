@@ -9,6 +9,7 @@ import { BlogService } from '../../../blog.service';
 import { MatButtonModule } from '@angular/material/button';
 import { CategoryService } from '../../../category.service';
 import { Category } from '../../../types/category';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-manage-blogs',
@@ -19,6 +20,7 @@ import { Category } from '../../../types/category';
     MatSort,
     MatInputModule,
     MatButtonModule,
+    RouterLink
   ],
   templateUrl: './manage-blogs.component.html',
   styleUrl: './manage-blogs.component.scss',
