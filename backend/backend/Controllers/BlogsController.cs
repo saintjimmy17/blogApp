@@ -1,4 +1,5 @@
 ﻿using backend.Data;
+using backend.Dto;
 using backend.Entity;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -29,14 +30,23 @@ namespace backend.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> AddBlog([FromBody] Blog model)
+        public async Task<ActionResult> AddBlog([FromBody] BlogDto model)
         {
-           await _blogRepository.AddAsync(model);
+            var blog = new Blog()
+            {
+                CategoryId = model.CategoryId,
+                IsFeatured = model.IsFeatured,
+                Content = model.Content,
+                Title = model.Title,
+                Description = model.Description,
+                Image = model.Image,
+            };
+           await _blogRepository.AddAsync(blog);
            await _blogRepository.SaveChangesAsync();
             return Ok(model);
         }
         [HttpPut("{id}")]
-        public async Task<ActionResult> UpdateBlog([FromRoute] int id, [FromBody] Blog model)
+        public async Task<ActionResult> UpdateBlog([FromRoute] int id, [FromBody] BlogDto model)
         {
             var blog = await _blogRepository.GetById(id);
             blog.Description = model.Description;

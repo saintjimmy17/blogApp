@@ -6,6 +6,9 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSelectModule } from '@angular/material/select';
 import { CategoryService } from '../../../category.service';
 import { Category } from '../../../types/category';
+import { BlogService } from '../../../blog.service';
+import { Blog } from '../../../types/blog';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-blog-form',
@@ -32,7 +35,9 @@ export class BlogFormComponent {
     isFeatured: [false],
   });
   categoryService = inject(CategoryService);
+  blogService = inject(BlogService);
   categoryList: Category[] = [];
+  router = inject(Router);
   ngOnInit() {
     this.categoryService
       .getCategoryList()
@@ -40,5 +45,10 @@ export class BlogFormComponent {
   }
   create() {
     console.log(this.blogForm.value);
+    let model: any = this.blogForm.value;
+    this.blogService.addBlog(model as Blog).subscribe(() => {
+      alert("Blog created")
+      this.router.navigateByUrl("/admin/blogs")
+    });
   }
 }

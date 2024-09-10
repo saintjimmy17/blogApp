@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{75BA060A-385F-4D02-9F1C-4A1FDA22551B}|backend\\backend.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{75BA060A-385F-4D02-9F1C-4A1FDA22551B}|backend\\backend.csproj|c:\\users\\mariano\\desktop\\blogapp\\backend\\backend\\dto\\blogdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75BA060A-385F-4D02-9F1C-4A1FDA22551B}|backend\\backend.csproj|solutionrelative:backend\\dto\\blogdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{75BA060A-385F-4D02-9F1C-4A1FDA22551B}|backend\\backend.csproj|c:\\users\\mariano\\desktop\\blogapp\\backend\\backend\\controllers\\blogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75BA060A-385F-4D02-9F1C-4A1FDA22551B}|backend\\backend.csproj|solutionrelative:backend\\controllers\\blogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -58,23 +62,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "BlogDto.cs",
+              "DocumentMoniker": "C:\\Users\\Mariano\\Desktop\\blogApp\\backend\\backend\\Dto\\BlogDto.cs",
+              "RelativeDocumentMoniker": "backend\\Dto\\BlogDto.cs",
+              "ToolTip": "C:\\Users\\Mariano\\Desktop\\blogApp\\backend\\backend\\Dto\\BlogDto.cs",
+              "RelativeToolTip": "backend\\Dto\\BlogDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T14:00:07.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "BlogsController.cs",
               "DocumentMoniker": "C:\\Users\\Mariano\\Desktop\\blogApp\\backend\\backend\\Controllers\\BlogsController.cs",
               "RelativeDocumentMoniker": "backend\\Controllers\\BlogsController.cs",
               "ToolTip": "C:\\Users\\Mariano\\Desktop\\blogApp\\backend\\backend\\Controllers\\BlogsController.cs",
               "RelativeToolTip": "backend\\Controllers\\BlogsController.cs",
-              "ViewState": "AQIAADoAAAAAAAAAAAAuwD4AAABMAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAwwDIAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T15:37:20.141Z"
+              "WhenOpened": "2024-08-27T15:37:20.141Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "20240827153126_category-colum-type-change.cs",
               "DocumentMoniker": "C:\\Users\\Mariano\\Desktop\\blogApp\\backend\\backend\\Migrations\\20240827153126_category-colum-type-change.cs",
               "RelativeDocumentMoniker": "backend\\Migrations\\20240827153126_category-colum-type-change.cs",
@@ -86,7 +104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "CategoryController.cs",
               "DocumentMoniker": "C:\\Users\\Mariano\\Desktop\\blogApp\\backend\\backend\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "backend\\Controllers\\CategoryController.cs",
@@ -98,7 +116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "SqlRepository.cs",
               "DocumentMoniker": "C:\\Users\\Mariano\\Desktop\\blogApp\\backend\\backend\\Data\\SqlRepository.cs",
               "RelativeDocumentMoniker": "backend\\Data\\SqlRepository.cs",
@@ -110,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Users\\Mariano\\Desktop\\blogApp\\backend\\backend\\Data\\IRepository.cs",
               "RelativeDocumentMoniker": "backend\\Data\\IRepository.cs",
@@ -122,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "20240826171645_\u0027initial\u0027.cs",
               "DocumentMoniker": "C:\\Users\\Mariano\\Desktop\\blogApp\\backend\\backend\\Migrations\\20240826171645_\u0027initial\u0027.cs",
               "RelativeDocumentMoniker": "backend\\Migrations\\20240826171645_\u0027initial\u0027.cs",
@@ -134,7 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\Mariano\\Desktop\\blogApp\\backend\\backend\\Entity\\Category.cs",
               "RelativeDocumentMoniker": "backend\\Entity\\Category.cs",
@@ -146,7 +164,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Blog.cs",
               "DocumentMoniker": "C:\\Users\\Mariano\\Desktop\\blogApp\\backend\\backend\\Entity\\Blog.cs",
               "RelativeDocumentMoniker": "backend\\Entity\\Blog.cs",
@@ -158,7 +176,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Mariano\\Desktop\\blogApp\\backend\\backend\\appsettings.json",
               "RelativeDocumentMoniker": "backend\\appsettings.json",
@@ -176,14 +194,14 @@
               "RelativeDocumentMoniker": "backend\\Program.cs",
               "ToolTip": "C:\\Users\\Mariano\\Desktop\\blogApp\\backend\\backend\\Program.cs",
               "RelativeToolTip": "backend\\Program.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAACUAAAAKAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAADQAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-26T13:43:58.871Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Mariano\\Desktop\\blogApp\\backend\\backend\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "backend\\Data\\AppDbContext.cs",
@@ -195,7 +213,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "backend.csproj",
               "DocumentMoniker": "C:\\Users\\Mariano\\Desktop\\blogApp\\backend\\backend\\backend.csproj",
               "RelativeDocumentMoniker": "backend\\backend.csproj",

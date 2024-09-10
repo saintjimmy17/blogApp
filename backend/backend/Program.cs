@@ -18,6 +18,17 @@ builder.Services.AddDbContext<AppDbContext>(option => option.UseSqlServer(connec
 builder.Services.AddScoped<IRepository<Blog>, SqlRepository<Blog>>();
 builder.Services.AddScoped<IRepository<Category>, SqlRepository<Category>>();
 
+// Configuración de CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigin", builder =>
+    {
+        builder.WithOrigins("http://localhost:4200") // Cambia a tu URL de frontend
+               .AllowAnyHeader() // Permite cualquier encabezado, como 'Content-Type'
+               .AllowAnyMethod(); // Permite cualquier método HTTP
+    });
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -32,7 +43,11 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
+// Aplicar la política de CORS antes de la autorización
+app.UseCors("AllowSpecificOrigin");
+
+app.UseAuthorization();
+
 app.MapControllers();
 
-app.UseCors(o=>o.AllowAnyOrigin().AllowAnyOrigin().AllowAnyMethod());
 app.Run();

@@ -21,4 +21,7 @@ export class BlogService {
   deleteBlog(id: number){
     return this.http.delete(environment.apiUrl + '/api/Blogs/' + id);
   }
+  addBlog(blog: Blog){
+    return this.http.post(environment.apiUrl + '/api/Blogs', blog);
+  }
 }
