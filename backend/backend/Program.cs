@@ -17,6 +17,10 @@ builder.Services.AddDbContext<AppDbContext>(option => option.UseSqlServer(connec
 
 builder.Services.AddScoped<IRepository<Blog>, SqlRepository<Blog>>();
 builder.Services.AddScoped<IRepository<Category>, SqlRepository<Category>>();
+builder.Services.AddScoped<IRepository<User>, SqlRepository<User>>();
+
+builder.Services.AddAuthentication().AddBearerToken();
+builder.Services.AddAuthentication();
 
 // Configuración de CORS
 builder.Services.AddCors(options =>

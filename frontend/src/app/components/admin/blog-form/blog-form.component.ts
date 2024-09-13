@@ -8,7 +8,7 @@ import { CategoryService } from '../../../category.service';
 import { Category } from '../../../types/category';
 import { BlogService } from '../../../blog.service';
 import { Blog } from '../../../types/blog';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-blog-form',
@@ -38,7 +38,18 @@ export class BlogFormComponent {
   blogService = inject(BlogService);
   categoryList: Category[] = [];
   router = inject(Router);
+  route = inject(ActivatedRoute);
+  isEdit = false;
   ngOnInit() {
+    let id = this.route.snapshot.params['id'];
+    console.log(id);
+    if (id) {
+      this.isEdit = true;
+      this.blogService.getBlogById(+id).subscribe((result) => {
+        this.blogForm.patchValue(result as any);
+      });
+    }
+
     this.categoryService
       .getCategoryList()
       .subscribe((result) => (this.categoryList = result));
@@ -47,8 +58,18 @@ export class BlogFormComponent {
     console.log(this.blogForm.value);
     let model: any = this.blogForm.value;
     this.blogService.addBlog(model as Blog).subscribe(() => {
-      alert("Blog created")
-      this.router.navigateByUrl("/admin/blogs")
+      alert('Blog created');
+      this.router.navigateByUrl('/admin/blogs');
     });
+  }
+  update() {
+    console.log(this.blogForm.value);
+    let model: any = this.blogForm.value;
+    this.blogService
+      .updateBlog(this.blogForm.value.id!, model as Blog)
+      .subscribe(() => {
+        alert('Blog updated');
+        this.router.navigateByUrl('/admin/blogs');
+      });
   }
 }

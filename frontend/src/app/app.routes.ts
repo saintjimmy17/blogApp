@@ -32,7 +32,7 @@ export const routes: Routes = [
     component: BlogFormComponent
   },
   {
-    path: 'admin/blog/update',
+    path: 'admin/blog/update/:id',
     component: BlogFormComponent
-  }
+  },
 ];

@@ -67,8 +67,8 @@ export class ManageBlogsComponent {
   }
   delete(data: Blog) {
     console.log(data.id);
-    this.blogService.deleteBlog(data.id).subscribe(() => {
-      this.dataSource.data = this.blogs.filter(x => x.id! = data.id);
+    this.blogService.deleteBlog(data.id!).subscribe(() => {
+      this.dataSource.data = this.blogs.filter(x => x.id != data.id);
     })
   }
 }
