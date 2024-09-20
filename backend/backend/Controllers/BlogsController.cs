@@ -1,6 +1,7 @@
 ﻿using backend.Data;
 using backend.Dto;
 using backend.Entity;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,7 +13,7 @@ namespace backend.Controllers
     {
         private readonly IRepository<Blog> _blogRepository;
 
-        public BlogsController(IRepository<Blog> blogRepository) 
+        public BlogsController(IRepository<Blog> blogRepository)
         {
             _blogRepository = blogRepository;
         }
@@ -29,6 +30,7 @@ namespace backend.Controllers
             return Ok(blog);
         }
 
+        [Authorize]
         [HttpPost]
         public async Task<ActionResult> AddBlog([FromBody] BlogDto model)
         {
@@ -41,10 +43,12 @@ namespace backend.Controllers
                 Description = model.Description,
                 Image = model.Image,
             };
-           await _blogRepository.AddAsync(blog);
-           await _blogRepository.SaveChangesAsync();
+            await _blogRepository.AddAsync(blog);
+            await _blogRepository.SaveChangesAsync();
             return Ok(model);
         }
+
+        [Authorize]
         [HttpPut("{id}")]
         public async Task<ActionResult> UpdateBlog([FromRoute] int id, [FromBody] BlogDto model)
         {
@@ -59,6 +63,7 @@ namespace backend.Controllers
             return Ok(model);
         }
 
+        [Authorize]
         [HttpDelete("{id}")]
         public async Task<ActionResult> DeleteBlog([FromRoute,] int id)
         {
