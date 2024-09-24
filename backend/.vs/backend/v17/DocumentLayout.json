@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{75BA060A-385F-4D02-9F1C-4A1FDA22551B}|backend\\backend.csproj|solutionrelative:backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75BA060A-385F-4D02-9F1C-4A1FDA22551B}|backend\\backend.csproj|c:\\users\\mariano\\desktop\\blogapp\\backend\\backend\\controllers\\blogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75BA060A-385F-4D02-9F1C-4A1FDA22551B}|backend\\backend.csproj|solutionrelative:backend\\controllers\\blogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{75BA060A-385F-4D02-9F1C-4A1FDA22551B}|backend\\backend.csproj|c:\\users\\mariano\\desktop\\blogapp\\backend\\backend\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75BA060A-385F-4D02-9F1C-4A1FDA22551B}|backend\\backend.csproj|solutionrelative:backend\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75BA060A-385F-4D02-9F1C-4A1FDA22551B}|backend\\backend.csproj|c:\\users\\mariano\\desktop\\blogapp\\backend\\backend\\controllers\\blogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75BA060A-385F-4D02-9F1C-4A1FDA22551B}|backend\\backend.csproj|solutionrelative:backend\\controllers\\blogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{75BA060A-385F-4D02-9F1C-4A1FDA22551B}|backend\\backend.csproj|c:\\users\\mariano\\desktop\\blogapp\\backend\\backend\\migrations\\20240826171645_\u0027initial\u0027.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -78,7 +78,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "LoginDto.cs",
               "DocumentMoniker": "C:\\Users\\Mariano\\Desktop\\blogApp\\backend\\backend\\Dto\\LoginDto.cs",
               "RelativeDocumentMoniker": "backend\\Dto\\LoginDto.cs",
@@ -86,7 +86,8 @@
               "RelativeToolTip": "backend\\Dto\\LoginDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T14:22:58.626Z"
+              "WhenOpened": "2024-09-13T14:22:58.626Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -139,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "BlogsController.cs",
               "DocumentMoniker": "C:\\Users\\Mariano\\Desktop\\blogApp\\backend\\backend\\Controllers\\BlogsController.cs",
               "RelativeDocumentMoniker": "backend\\Controllers\\BlogsController.cs",
